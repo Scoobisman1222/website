@@ -1,0 +1,422 @@
+<!DOCTYPE html><html lang="en"><head><title>Classroom</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="og:description" content="Freedombrowser - A browser for freedom"><meta property="og:title" content="Freedom Browser"><meta name="google-adsense-account" content="ca-pub-5233109601983819"><link rel="dns-prefetch" href="https://www.googletagmanager.com/"><link href="https://www.googletagmanager.com/gtag/js?id=GTM-PTC7S37X" rel="preload" as="script"><script async src="https://www.googletagmanager.com/gtag/js?id=G-2X0KPXC041" type="7f76b30cbf34d5eeadd48379-text/javascript"></script><script type="7f76b30cbf34d5eeadd48379-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2X0KPXC041');
+</script><link href="/static//styles/index.css" rel="stylesheet" type="text/css"><script src="/static//scripts/jquery-3.7.1.min.js" type="7f76b30cbf34d5eeadd48379-text/javascript"></script><script defer src="/static//scripts/global.js" type="7f76b30cbf34d5eeadd48379-text/javascript"></script><script defer type="7f76b30cbf34d5eeadd48379-text/javascript"></script><script src="/static//scripts/offline_sw.js" type="7f76b30cbf34d5eeadd48379-text/javascript"></script><script type="7f76b30cbf34d5eeadd48379-text/javascript">
+    if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/offlinesw.js').then((registration) => {
+    console.log('Service Worker registered with scope: ', registration.scope);
+
+    // Ensure service worker controls the page immediately
+    if (registration.waiting) {
+      registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+    }
+  }).catch((error) => {
+    console.error('Service Worker registration failed: ', error);
+  });
+}
+  </script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5233109601983819" crossorigin="anonymous" type="7f76b30cbf34d5eeadd48379-text/javascript"></script><script async type="7f76b30cbf34d5eeadd48379-text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "obftoh3tz8");
+</script><script data-cfasync="false" nonce="a9964844-8358-4ab3-8f45-3c1cf8510b86">try{(function(w,d){!function(j,k,l,m){if(j.zaraz)console.error("zaraz is loaded twice");else{j[l]=j[l]||{};j[l].executed=[];j.zaraz={deferred:[],listeners:[]};j.zaraz._v="5870";j.zaraz._n="a9964844-8358-4ab3-8f45-3c1cf8510b86";j.zaraz.q=[];j.zaraz._f=function(n){return async function(){var o=Array.prototype.slice.call(arguments);j.zaraz.q.push({m:n,a:o})}};for(const p of["track","set","debug"])j.zaraz[p]=j.zaraz._f(p);j.zaraz.init=()=>{var q=k.getElementsByTagName(m)[0],r=k.createElement(m),s=k.getElementsByTagName("title")[0];s&&(j[l].t=k.getElementsByTagName("title")[0].text);j[l].x=Math.random();j[l].w=j.screen.width;j[l].h=j.screen.height;j[l].j=j.innerHeight;j[l].e=j.innerWidth;j[l].l=j.location.href;j[l].r=k.referrer;j[l].k=j.screen.colorDepth;j[l].n=k.characterSet;j[l].o=(new Date).getTimezoneOffset();if(j.dataLayer)for(const t of Object.entries(Object.entries(dataLayer).reduce((u,v)=>({...u[1],...v[1]}),{})))zaraz.set(t[0],t[1],{scope:"page"});j[l].q=[];for(;j.zaraz.q.length;){const w=j.zaraz.q.shift();j[l].q.push(w)}r.defer=!0;for(const x of[localStorage,sessionStorage])Object.keys(x||{}).filter(z=>z.startsWith("_zaraz_")).forEach(y=>{try{j[l]["z_"+y.slice(7)]=JSON.parse(x.getItem(y))}catch{j[l]["z_"+y.slice(7)]=x.getItem(y)}});r.referrerPolicy="origin";r.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(j[l])));q.parentNode.insertBefore(r,q)};["complete","interactive"].includes(k.readyState)?zaraz.init():j.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async bs=>new Promise(bt=>{if(bs){bs.e&&bs.e.forEach(bu=>{try{const bv=d.querySelector("script[nonce]"),bw=bv?.nonce||bv?.getAttribute("nonce"),bx=d.createElement("script");bw&&(bx.nonce=bw);bx.innerHTML=bu;bx.onload=()=>{d.head.removeChild(bx)};d.head.appendChild(bx)}catch(by){console.error(`Error executing script: ${bu}\n`,by)}});Promise.allSettled((bs.f||[]).map(bz=>fetch(bz[0],bz[1])))}bt()});zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head><div id="global-container"><head><meta name="description" content="Unblock your favorite websites and play your favourite unblocked games anytime, anywhere! Freedom Browser makes it easy to access fun content at school, work, or home."><script defer type="7f76b30cbf34d5eeadd48379-text/javascript">
+    const browserURL = "/browser";
+    hideNavbar = true;
+
+    $(document).ready(function() {
+         $('.search-container input').on("keydown", function(event) {
+              if (event.which === 13) {
+                   console.log("Search query: " + $(this).val());
+                   window.location.href = `${browserURL}?query=${btoa($(this).val())}`;
+              }
+         });
+
+         // Dropdown toggle with hover and leave
+         $(".side-boxes").on("mouseenter", function() {
+            $(this).find(".dropdown").stop(true, true).fadeIn(200);
+         }).on("mouseleave", function() {
+            $(this).find(".dropdown").stop(true, true).fadeOut(200);
+         });
+    });
+  </script><style>
+    @font-face {
+    font-family: Schoolbell;
+    src: url("/static/fonts/Schoolbell.woff2") format("woff2");
+    font-display: optional;
+}
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #eae3e3; 
+        height: 100vh;
+        overflow: hidden;
+      }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .report-section {
+        width: 60%;
+        padding: 0 10px;
+        background-color: transparent;
+        position: fixed;
+        bottom: 5px;
+        box-sizing: border-box;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .report-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .report-container input[type="text"] {
+        padding: 12px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 18px;
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .report-container button {
+        background-color: #9d9d9d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        width: auto;
+        min-width: 100px;
+    }
+
+    .content-wrapper {
+        display: flex; /*needed for mobile support */
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 20px;
+        
+    }
+
+
+    .side-boxes {
+        position: relative;
+    }
+
+     /* Dropdown Styles */
+     .dropdown {
+        bottom: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(124, 123, 123, 0.65); 
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px); 
+        border-radius: 25px;
+        padding: 15px;
+        z-index: 1000;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px; 
+        align-items: center;
+        display: none;
+    }
+    .side-boxes:hover .dropdown {
+    display: flex;
+}
+
+    .dropdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: #eae3e3;
+        text-decoration: none;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        width: 100px; 
+        height: 100px; 
+    }
+
+    .dropdown-item:hover {
+        transform: scale(1.05);
+        background-color: rgba(211, 183, 183, 0.3);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .dropdown-item img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .dropdown-item p {
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    
+    @media (max-width: 768px) {
+        .dropdown {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .dropdown-item {
+            width: calc(50% - 10px);
+            height: calc(50% - 10px);
+        }
+
+        .dropdown-item img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dropdown-item p {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .dropdown {
+            flex-wrap: wrap;
+            width: 180px;
+        }
+
+
+        .report-section{
+            display: none !important;
+        }
+
+        .dropdown-item {
+            width: calc(50% - 10px);
+            height: calc(50% - 10px);
+        }
+
+        .dropdown-item img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .dropdown-item p {
+            font-size: 11px;
+        }
+    }
+
+
+    .report-section {
+    width: 60%;
+    padding: 0 20px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 5px;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+}
+
+.report-container {
+    display: flex;
+    justify-content: space-between; /* Space out the form and Discord link */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width of report section */
+}
+
+.discord-link {
+    margin-left: 10px; /* Space from the report form */
+}
+
+.discord-img {
+    height: 100%; /* Make image fill the height of the report bar */
+    max-height: 50px; /* Set a maximum height if needed */
+    width: auto; /* Keep the aspect ratio */
+}
+
+.dropdown {
+    display: none;
+}
+
+
+.report-container input[type="text"] {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    flex: 1;
+    min-width: 200px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.report-container input[type="text"]:focus {
+    outline: none;
+    border-color: #808080;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.4);
+}
+
+.report-container button {
+    background-color: #666666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: auto;
+    min-width: 100px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.report-container button:hover {
+    background-color: #808080;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.report-container button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.logo-container {
+   position: absolute;
+   top: 10px;
+   left: 5px;
+   border-radius: 10px;
+}
+
+.logo-container img {
+   width: 127px;
+   height: 100px;
+   border-radius: 10px;
+}
+
+
+.unblock-box {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    transform: none;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    max-width: 300px;
+    text-align: center;
+    z-index: 1000;
+    opacity: 1; 
+}
+
+.unblock-box strong {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.unblock-box button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.unblock-box button:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+</style><script data-cfasync="false" nonce="a9964844-8358-4ab3-8f45-3c1cf8510b86">try{(function(w,d){!function(j,k,l,m){if(j.zaraz)console.error("zaraz is loaded twice");else{j[l]=j[l]||{};j[l].executed=[];j.zaraz={deferred:[],listeners:[]};j.zaraz._v="5870";j.zaraz._n="a9964844-8358-4ab3-8f45-3c1cf8510b86";j.zaraz.q=[];j.zaraz._f=function(n){return async function(){var o=Array.prototype.slice.call(arguments);j.zaraz.q.push({m:n,a:o})}};for(const p of["track","set","debug"])j.zaraz[p]=j.zaraz._f(p);j.zaraz.init=()=>{var q=k.getElementsByTagName(m)[0],r=k.createElement(m),s=k.getElementsByTagName("title")[0];s&&(j[l].t=k.getElementsByTagName("title")[0].text);j[l].x=Math.random();j[l].w=j.screen.width;j[l].h=j.screen.height;j[l].j=j.innerHeight;j[l].e=j.innerWidth;j[l].l=j.location.href;j[l].r=k.referrer;j[l].k=j.screen.colorDepth;j[l].n=k.characterSet;j[l].o=(new Date).getTimezoneOffset();if(j.dataLayer)for(const t of Object.entries(Object.entries(dataLayer).reduce((u,v)=>({...u[1],...v[1]}),{})))zaraz.set(t[0],t[1],{scope:"page"});j[l].q=[];for(;j.zaraz.q.length;){const w=j.zaraz.q.shift();j[l].q.push(w)}r.defer=!0;for(const x of[localStorage,sessionStorage])Object.keys(x||{}).filter(z=>z.startsWith("_zaraz_")).forEach(y=>{try{j[l]["z_"+y.slice(7)]=JSON.parse(x.getItem(y))}catch{j[l]["z_"+y.slice(7)]=x.getItem(y)}});r.referrerPolicy="origin";r.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(j[l])));q.parentNode.insertBefore(r,q)};["complete","interactive"].includes(k.readyState)?zaraz.init():j.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async bs=>new Promise(bt=>{if(bs){bs.e&&bs.e.forEach(bu=>{try{const bv=d.querySelector("script[nonce]"),bw=bv?.nonce||bv?.getAttribute("nonce"),bx=d.createElement("script");bw&&(bx.nonce=bw);bx.innerHTML=bu;bx.onload=()=>{d.head.removeChild(bx)};d.head.appendChild(bx)}catch(by){console.error(`Error executing script: ${bu}\n`,by)}});Promise.allSettled((bs.f||[]).map(bz=>fetch(bz[0],bz[1])))}bt()});zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTC7S37X" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript>You're going to need to enable JavaScript to run this browser.</noscript><div class="logo-container"><img src="/static/images/newlogo.webp" alt="Website Logo"></div><div class="gradient-bg"><div class="gradients-container"><div class="g1"></div><div class="g4"></div></div></div><div class="content-wrapper"><div class="main-content"><div class="title-container"><div class="side-boxes"><a href="/settings" class="side-box"><img src="/static/images/setting.min.svg" alt="A button that will eventually allow for users to permently unblock freedombrowser"><p>Settings</p></a></div><div class="main-title-content"><h1 class="welcome">Freedom Browser</h1><h3 class="us">Built By Students For <span class="flip-text school">School</span></h3><div class="search-container"><input type="text" placeholder="Unblock Anything With Freedom"></div></div><div class="side-boxes"><a href="#" class="side-box"><img src="/static/images/more.min.svg" alt="A button that Drops down to Reveal more links"><p>Other</p></a><div class="dropdown"><a href="/saved" class="dropdown-item"><img src="/static/images/savedgames.min.svg" alt="takes you to the Saved Games Page"><p>Saved Games</p></a><a href="/privacy" class="dropdown-item"><img src="/static/images/privacy.min.svg" alt="Takes you too the Privacy Policy Page"><p>Privacy Policy</p></a><a href="/about" class="dropdown-item"><img src="/static/images/about.min.svg" alt="Takes you too the about page"><p>About</p></a></div></div></div><div class="boxes-container"><a href="/browser" class="box"><img src="/static/images/browser.min.svg" alt="A image that when clicked takes you to Freedombrowser's Website Unblocker"><p>Website<br> Unblocker</p></a><a href="/verified" class="box"><img src="/static/images/whitegameico.min.svg" alt="Redirects you to our extensive game libary Unblocked Games"><p>Unblocked<br> Games</p></a><a href="/minecraft" class="box minecraft-box"><img src="/static/images/mine.min.svg" alt="Takes you too Minecraft 1.8 running in your browser"><p>Minecraft</p></a></div></div></div><div class="report-section"><a href="https://uk.trustpilot.com/review/freedombrowser.org" target="_blank" rel="noopener"><img width="150px" height="55px" alt="Takes you to the Freedom Browser Trustpilot page to review it" src="/static/images/trust.min.svg"></a><form class="report-container" id="report-container" onsubmit="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display: flex; align-items: center; margin-right: 1px;" data-cf-modified-7f76b30cbf34d5eeadd48379-=""><a href="https://discord.gg/dt9MeRegpF"><img width="100px" height="50px" alt="Join our Discord" src="/static/images/joindiscord.min.svg"></a><input type="text" id="webhook-input" placeholder="Report a broken game or a bug here" required><button type="button" onclick="if (!window.__cfRLUnblockHandlers) return false; sendData()" style="margin-left: 10px;" data-cf-modified-7f76b30cbf34d5eeadd48379-="">Submit</button></form></div><script type="7f76b30cbf34d5eeadd48379-text/javascript">
+        const inputElement = document.getElementById('webhook-input');
+        var IP = "Unknown";
+        function getIP(json) {
+          IP = json.ip;
+        }
+        var report;
+        function sendData() {
+            if (!/^ *$/.test(inputElement.value)) {
+                $("#report-container").html('<div style="text-align: center; padding: 5px"><img src="/static/assets/slowloading.webp"' +
+                    'alt="Submitting, please wait..." height="53px" width="53px"></div>');
+                report = JSON.stringify({
+                    ip: IP,
+                    id: browserID,
+                    content: inputElement.value.replace('"', ''),
+                });
+                $.ajax({
+                    type: "POST",
+                    url: "https://api.freedombrowser.org/report",
+                    contentType: "application/json",
+                    data: report,
+                    success: function(response) {
+                        if (response === '404') {
+                            $("#report-container").html("Error 404 not found, please send us an email if you see this, thank you.");
+                        } else if (response === 'ratelimited') {
+                            $("#report-container").html("<h3 style='color: red;'>You are being rate limited</h3>");
+                        } else if (response === 'spamdetected') {
+                            $("#report-container").html("<h3 style='color: red;'>This report has been identified as spam</h3>");
+                        } else {
+                            $("#report-container").html("<h3>Thank you, your report has been submitted.</h3>");
+                        }
+                    },
+                    error: function(error) {
+                        $("#report-container").html("<h3 style='color: red;'>Could not send report due to an error. Try again later.</h3>");
+                    }
+                });
+            }
+        }
+    </script><!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a9344bb358554eeca4fe1cc42998e218"}' type="7f76b30cbf34d5eeadd48379-text/javascript"></script><!-- Cloudflare Pages Analytics --><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7f76b30cbf34d5eeadd48379-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8a22501db60e4a359822b41ce462bf23","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html></div></html>
